@@ -23,6 +23,7 @@ public class selenium1 {
           driver.findElement(By.xpath("//input[@name='q']")).sendKeys("mindtree");
           d.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@value='Google Search']")));
           driver.findElement(By.xpath("//input[@value='Google Search']")).click();
+          System.out.println();
           /*driver.findElement(By.cssSelector("input[value='Google Search']")).submit();*/
           
 	}
