@@ -15,7 +15,7 @@ public class selenium1 {
 		// TODO Auto-generated method stub
           System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
           WebDriver driver=new ChromeDriver();
-          System.out.println();
+          
           //modifying for jenkins
           //implicit wait
           //driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
@@ -24,7 +24,8 @@ public class selenium1 {
           driver.findElement(By.xpath("//input[@name='q']")).sendKeys("mindtree");
           d.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//input[@value='Google Search']")));
           driver.findElement(By.xpath("//input[@value='Google Search']")).click();
-          
+          System.out.println();
+          System.out.println("a");
           /*driver.findElement(By.cssSelector("input[value='Google Search']")).submit();*/
           
 	}
