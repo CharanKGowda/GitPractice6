@@ -15,6 +15,7 @@ public class selenium1 {
 		// TODO Auto-generated method stub
           System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
           WebDriver driver=new ChromeDriver();
+          //modifying for jenkins
           //implicit wait
           //driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
           WebDriverWait d = new WebDriverWait(driver,4);
